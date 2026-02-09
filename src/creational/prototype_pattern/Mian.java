@@ -1,6 +1,10 @@
+package creational.prototype_pattern;
+
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
+@Data
 @Getter
 @Setter
 class Employee {
@@ -11,7 +15,7 @@ class Employee {
     private String phoneNumber;
 }
 
-interface EmployeeBuilder{
+interface EmployeeBuilder {
     void initialize();
     void id(Integer id);
     void name(String name);
@@ -20,11 +24,12 @@ interface EmployeeBuilder{
     void phoneNumber(String phoneNumber);
 }
 
+// ConcreteBuilder
 
-// concreteBuilder
 class ConcreteEmployeeBuilder implements EmployeeBuilder{
-    private  Employee result;
-    // reset
+    private Employee result;
+
+
     @Override
     public void initialize() {
         result = new Employee();
@@ -54,7 +59,8 @@ class ConcreteEmployeeBuilder implements EmployeeBuilder{
     public void phoneNumber(String phoneNumber) {
         result.setPhoneNumber(phoneNumber);
     }
-    // return object with its value
+
+    // return result
     public Employee getResult(){
         return this.result;
     }
@@ -81,17 +87,13 @@ class EmployeeDirector {
 }
 
 
-
-public class Main {
-    static void main(String[] args) {
+public class Mian {
+    static void main() {
 
         ConcreteEmployeeBuilder builder = new ConcreteEmployeeBuilder();
         EmployeeDirector director = new EmployeeDirector(builder);
         director.make();
         Employee employee = builder.getResult();
         System.out.println(employee);
-
-
-
     }
 }

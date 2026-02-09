@@ -1,4 +1,4 @@
-package pattern.adapterPattern.practice;
+package structural.adapterPattern.practice;
 
 public class App {
     static void main(String[] args) {

@@ -1,4 +1,4 @@
-package pattern.adapterPattern;
+package structural.adapterPattern;
 
 public class CreditPayment implements PaymentProcessor{
 

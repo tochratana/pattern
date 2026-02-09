@@ -1,4 +1,4 @@
-package pattern.adapterPattern.practice;
+package structural.adapterPattern.practice;
 
 public class AdapterPayment implements DollarPaymentService{
 

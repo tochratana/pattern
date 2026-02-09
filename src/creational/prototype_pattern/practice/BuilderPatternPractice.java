@@ -1,3 +1,5 @@
+package creational.prototype_pattern.practice;
+
 class Author {
     private Integer id;
     private String uuid;
@@ -115,23 +117,17 @@ class Movie {
 
 
 
-public class Practice {
+public class BuilderPatternPractice {
     static void main(String[] args) {
-
-
-
         Author author = new Author.Builder()
                 .id(1)
                 .name("Ot dg muy na te")
                 .build();
 
-
         Movie movie = new Movie.Builder()
                 .id(1)
                 .build();
-
         System.out.println(movie);
-
         System.out.println(author);
     }
 }
