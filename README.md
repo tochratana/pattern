@@ -93,7 +93,7 @@ Patterns included:
 
 ### Author
 Toch Ratana
-IT Student | Web Developer | Software Engineering Learner
+IT Student | DevOps Engineering
 
 Portfolio: https://tochratana.com
 
