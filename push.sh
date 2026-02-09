@@ -18,6 +18,6 @@ if git diff --cached --quiet; then
 fi
 
 git commit -m "$MSG"
-git push
+git push origin main
 
 echo "✅ Pushed with message: $MSG"
