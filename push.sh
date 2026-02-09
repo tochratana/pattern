@@ -17,7 +17,7 @@ if git diff --cached --quiet; then
   exit 0
 fi
 
-git commit -m "$MSG"
+git commit -m "$MSG | '+%Y-%m-%d %H:%M:%S'"
 git push origin main
 
 echo "✅ Pushed with message: $MSG"
