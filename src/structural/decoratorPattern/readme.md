@@ -113,7 +113,6 @@ public class ChocolateDecorator extends CoffeeDecorator {
     public double getCost() {
         return coffee.getCost() + 0.7;
     }
-    
 }
 ```
 
@@ -193,4 +192,4 @@ Decorator(Decorator(ConcreteComponent))
 
 
 diagram 
-![../public/decoratorPattern.png](../../../public/decoratorPattern.png)
+![../public/decoratorPattern.png](../../../public/decoratorPattern.jpg)
