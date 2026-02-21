@@ -58,7 +58,6 @@ public class BuilderPattern {
                 .name("Ratana")
                 .build();
 
-
         System.out.println(teacher);
     }
 }
