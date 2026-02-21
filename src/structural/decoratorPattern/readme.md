@@ -1,5 +1,8 @@
 ## Decorator Pattern
 
+
+- https://medium.com/@thecodebean/decorator-design-pattern-implementation-in-java-af632380e249
+- 
 Decorator Pattern គឺជា Structural Design Pattern មួយ ដែលអនុញ្ញាតឱ្យយើង បន្ថែម behavior (មុខងារ) ទៅលើ object មួយ ដោយ មិនប្តូរ class ដើម នោះទេ។
 
 គំនិតសំខាន់:
@@ -187,3 +190,7 @@ Decorator Pattern គឺ:
 ```bash
 Decorator(Decorator(ConcreteComponent))
 ```
+
+
+diagram 
+![../public/decoratorPattern.png](../../../public/decoratorPattern.png)
